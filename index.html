@@ -13,8 +13,78 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <title>Shopping Cart</title>
   </head>
   <body>
-    
+    <main>
+<!-- table -->
+      <div class="container">
+        <h1 id="first">Shopping Cart</h1>
+        <p>BREAD MILK BUTTER.</p> 
+        <table class="table">
+          <!-- table header -->
+          <thead>
+            <tr>
+              <th>FoodItem</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Display Price</th>
+            </tr>
+          </thead>
+          <!-- table body -->
+          <tbody>
+            <!-- table Rows -->
+            <tr class="tableRow">
+              <!-- table columns -->
+              <td class="food">Fish</td>
+              <td class="price">$100</td>
+              <td class="Qty">
+                QTY
+                <input class="quantity" type="number" value="0">
+                <button class="Cancel">Cancel</button>
+              </td>
+              <td class="foodprice" type="number"></td>
+            </tr>
+            <tr class="tableRow">
+              <td class="food">Fish</td>
+              <td class="price">$100</td>
+              <td class="Qty">
+                QTY
+                <input class="quantity" type="number" value="0">
+                <button class="Cancel">Cancel</button>
+              </td>
+              <td class="foodprice" type="number"></td>    
+            </tr>
+            <tr class="tableRow">
+              <td class="food">Fish</td>
+              <td class="price">$100</td>
+              <td class="Qty">
+                QTY
+                <input class="quantity" type="number" value="0">
+                <button class="Cancel">Cancel</button>
+              </td>
+              <td class="foodprice" type="number"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- container end -->
+    </main>
+    <!-- add new food -->
+    <div class="customfood" style="margin: 100px">
+      <h1> Create New Item </h1>
+      <!-- inputs -->
+      <input id="foodin" type="text" value="Food Names Only";>
+      <input id="pricein" type="number";>
+      <button id="create">Create</button>
+    </div>
+    <!-- calculate total -->
+    <div class="calculatetotal" style="margin: 100px">
+      <button type="button" id="calculate"><p>Calculate Price!</p></button>
+    </div>
+    <!-- display total price -->
+    <footer style="margin: 100px">
+      <h1> Total Price </h1>
+      <h2 class="totalPrice"></h2>
+    </footer>  
   </body>
 </html>
